@@ -46,5 +46,5 @@ def run_ai_pipeline(audio_file):
 
 if __name__ == "__main__":
     # Đảm bảo file này tồn tại trong thư mục ai_nhomB
-    file_test = "test_buon_ngu.wav" 
+    file_test = "test_co_ban.wav" 
     run_ai_pipeline(file_test)
