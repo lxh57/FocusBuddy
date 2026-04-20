@@ -1,0 +1,17 @@
+# Môi trường ảo (không nên đẩy lên vì nó rất nặng)
+venv/
+.venv/
+__pycache__/
+
+# Các file âm thanh tạm thời
+*.wav
+*.mp3
+
+# File chứa mã bí mật (sẽ tạo ở bước sau)
+.env
+
+# Các file rác của VS Code
+.vscode/
+~$*
+*.tmp
+*.docx
