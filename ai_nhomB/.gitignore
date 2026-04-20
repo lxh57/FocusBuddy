@@ -12,3 +12,6 @@ __pycache__/
 
 # Các file rác của VS Code
 .vscode/
+~$*
+*.tmp
+*.docx
