@@ -1,17 +1,58 @@
-# Môi trường ảo (không nên đẩy lên vì nó rất nặng)
+# =============================================
+# FocusBuddy .gitignore
+# =============================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# --- Môi trường ảo ---
 venv/
 .venv/
-__pycache__/
+env/
 
-# Các file âm thanh tạm thời
-*.wav
-*.mp3
-
-# File chứa mã bí mật (sẽ tạo ở bước sau)
+# --- Biến môi trường (chứa API key) ---
 .env
 
-# Các file rác của VS Code
+# --- Model files (quá nặng để đẩy lên git) ---
+models/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+
+# --- Data files ---
+data/raw/
+data/processed/
+
+# --- Output files ---
+outputs/
+*.mp3
+*.wav
+*.ogg
+
+# --- IDE ---
 .vscode/
+.idea/
+*.swp
+*.swo
 ~$*
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+notebooks/*.html
+
+# --- OS ---
+.DS_Store
+Thumbs.db
 *.tmp
 *.docx
+
+# --- Misc ---
+*.log

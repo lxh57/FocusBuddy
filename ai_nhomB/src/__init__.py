@@ -1,0 +1,1 @@
+# FocusBuddy - AI Study Assistant

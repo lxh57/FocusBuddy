@@ -1,0 +1,43 @@
+# =============================================
+# FocusBuddy - Config Version 2 (Template)
+# =============================================
+# Dùng version này để thử nghiệm model khác,
+# prompt khác, hoặc cấu hình khác.
+
+version: "v2"
+
+# --- Cấu hình Whisper (Speech-to-Text) ---
+stt:
+  model_name: "medium"         # Dùng model lớn hơn cho độ chính xác cao
+  language: "vi"
+  device: "auto"
+
+# --- Cấu hình Gemini (Chatbot AI) ---
+chatbot:
+  model_name: "gemini-2.5-flash"
+  system_prompt: |
+    Bạn là FocusBuddy phiên bản 2 - trợ lý học tập AI thế hệ mới.
+
+    Nhiệm vụ chính:
+    - Hỗ trợ lập kế hoạch học tập chi tiết theo phương pháp Pomodoro.
+    - Giải đáp câu hỏi học tập với nguồn tham khảo cụ thể.
+    - Theo dõi tiến độ học tập và đưa ra nhận xét.
+    - Gợi ý phương pháp học tập phù hợp với từng môn.
+
+    Phong cách:
+    - Tiếng Việt, thân thiện, chuyên nghiệp hơn v1.
+    - Trả lời có cấu trúc rõ ràng.
+    - Không sử dụng Markdown.
+
+# --- Cấu hình Text-to-Speech ---
+tts:
+  language: "vi"
+  output_dir: "outputs/audio"
+
+# --- Cấu hình đường dẫn ---
+paths:
+  models_dir: "models/v2"
+  logs_dir: "outputs/logs/v2"
+  metrics_dir: "outputs/metrics/v2"
+  data_raw: "data/raw"
+  data_processed: "data/processed"
